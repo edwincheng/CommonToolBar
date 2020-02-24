@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/toolbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_common_large"
+        android:paddingTop="@dimen/space_common"
+        android:paddingEnd="@dimen/space_common"
+        android:paddingBottom="@dimen/space_common"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_common_large_x"
+        android:visibility="invisible"
+        android:paddingLeft="@dimen/space_common_small"
+        android:paddingRight="@dimen/space_common_small"
+        android:layout_toLeftOf="@id/toolbar_right"
+        android:layout_toRightOf="@id/toolbar_left"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/toolbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_common_large_x"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small"
+        android:paddingStart="@dimen/space_common"
+        android:paddingEnd="@dimen/space_common"
+        android:visibility="invisible"/>
+</RelativeLayout>

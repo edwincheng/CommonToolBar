@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonToolBar">
+        <attr name="titleText" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="L_BtnIcon" format="reference"/>
+        <attr name="R_BtnDrawableLeft" format="reference"/>
+        <attr name="R_BtnDrawableTop" format="reference"/>
+        <attr name="R_BtnDrawableRight" format="reference"/>
+        <attr name="R_BtnDrawableBottom" format="reference"/>
+        <attr name="R_drawablePadding" format="dimension"/>
+        <attr name="R_BtnText" format="string"/>
+    </declare-styleable>
+
+</resources>

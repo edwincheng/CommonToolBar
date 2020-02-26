@@ -2,14 +2,29 @@
 <resources>
     <declare-styleable name="CommonToolBar">
         <attr name="titleText" format="string"/>
-        <attr name="textColor" format="color"/>
-        <attr name="L_BtnIcon" format="reference"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="subTitleText" format="string"/>
+        <attr name="subTitleColor" format="color"/>
+        <attr name="L_BtnDrawableLeft" format="reference"/>
+        <attr name="L_BtnDrawableTop" format="reference"/>
+        <attr name="L_BtnDrawableRight" format="reference"/>
+        <attr name="L_BtnDrawableBottom" format="reference"/>
+        <attr name="L_drawablePadding" format="dimension"/>
+        <attr name="L_BtnText" format="string"/>
+        <attr name="L_BtnTextColor" format="color"/>
         <attr name="R_BtnDrawableLeft" format="reference"/>
         <attr name="R_BtnDrawableTop" format="reference"/>
         <attr name="R_BtnDrawableRight" format="reference"/>
         <attr name="R_BtnDrawableBottom" format="reference"/>
         <attr name="R_drawablePadding" format="dimension"/>
         <attr name="R_BtnText" format="string"/>
+        <attr name="R_BtnTextColor" format="color"/>
+        <attr name="SecondR_BtnDrawableLeft" format="reference"/>
+        <attr name="SecondR_BtnDrawableTop" format="reference"/>
+        <attr name="SecondR_BtnDrawableRight" format="reference"/>
+        <attr name="SecondR_BtnDrawableBottom" format="reference"/>
+        <attr name="SecondR_drawablePadding" format="dimension"/>
+        <attr name="SecondR_BtnText" format="string"/>
+        <attr name="SecondR_BtnTextColor" format="color"/>
     </declare-styleable>
-
 </resources>

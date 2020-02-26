@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/toolbar_left"
+        android:id="@+id/tv_toolbar_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="@dimen/space_common_large"
@@ -14,33 +14,65 @@
         android:paddingBottom="@dimen/space_common"
         android:visibility="invisible"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_subtitle"
+        android:layout_toRightOf="@id/tv_toolbar_left"
+        android:gravity="center">
+
+        <!-- 主标题 -->
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_common"
+            android:visibility="invisible"
+            android:paddingLeft="@dimen/space_common_small"
+            android:paddingRight="@dimen/space_common_mid"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- 副标题 -->
     <TextView
-        android:id="@+id/toolbar_title"
+        android:id="@+id/tv_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_common_large_x"
-        android:visibility="invisible"
-        android:paddingLeft="@dimen/space_common_small"
-        android:paddingRight="@dimen/space_common_small"
-        android:layout_toLeftOf="@id/toolbar_right"
-        android:layout_toRightOf="@id/toolbar_left"
-        android:maxLines="2"
-        android:ellipsize="end"/>
+        android:layout_toLeftOf="@id/tv_toolbar_second_right"
+        android:layout_centerVertical="true"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_common_small"
+        android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/toolbar_right"
+        android:id="@+id/tv_toolbar_second_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_common_large_x"
+        android:textSize="@dimen/text_common_small_xx"
+        android:paddingTop="@dimen/space_common_small"
+        android:paddingBottom="@dimen/space_common_small"
+        android:layout_toLeftOf="@id/tv_toolbar_right"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_toolbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_common_small_xx"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:paddingTop="@dimen/space_common_small"
         android:paddingBottom="@dimen/space_common_small"
-        android:paddingStart="@dimen/space_common"
-        android:paddingEnd="@dimen/space_common"
+        android:paddingStart="@dimen/space_common_small"
+        android:paddingEnd="@dimen/space_common_small"
+        android:gravity="center"
         android:visibility="invisible"/>
 </RelativeLayout>

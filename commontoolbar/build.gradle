@@ -1,5 +1,24 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'jitpack/maven'
+    bintrayName = 'commontoolbar'
+
+    publishedGroupId = 'com.github.edwincheng   '
+    libraryName = 'commontoolbar'
+
+    libraryDescription = 'Android view for tool(title) bar.'
+
+    siteUrl = 'https://github.com/edwincheng/CommonToolBar'
+    gitUrl = 'https://github.com/edwincheng/CommonToolBar.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'edwincheng'
+    developerName = 'Edwin Cheng'
+    developerEmail = 'zwp_edwincheng@163.com'
+}
+
 android {
     compileSdkVersion 28
 

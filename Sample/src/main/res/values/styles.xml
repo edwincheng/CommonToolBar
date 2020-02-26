@@ -1,11 +1,57 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- <item name="android:windowAnimationStyle">@style/Animation.Activity.Style</item> -->
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--屏幕常亮-->
+        <item name="android:keepScreenOn">true</item>
+        <!--&lt;!&ndash;沉浸状态栏&ndash;&gt;-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--隐藏状态栏-->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
     </style>
 
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <!--隐藏状态栏-->
+    <!--<item name="android:windowFullscreen">?android:windowNoTitle</item>-->
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="DialogTransparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity.Style</item>-->
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+        <item name="android:windowBackground">@color/common_transparent</item>
+        <!--屏幕常亮-->
+        <item name="android:keepScreenOn">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

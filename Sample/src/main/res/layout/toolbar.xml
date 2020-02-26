@@ -12,6 +12,7 @@
         android:paddingTop="@dimen/space_common"
         android:paddingEnd="@dimen/space_common"
         android:paddingBottom="@dimen/space_common"
+        android:textColor="@color/white"
         android:visibility="invisible"/>
 
     <LinearLayout

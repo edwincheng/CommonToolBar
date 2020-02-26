@@ -2,6 +2,7 @@ package com.github.edwincheng.commontoolbar.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.TintTypedArray;
 import android.support.v7.widget.Toolbar;
@@ -125,7 +126,7 @@ public class CommonToolBar extends Toolbar {
             }
 
             final int L_TextColor = tta.getColor(R.styleable.CommonToolBar_L_BtnTextColor, defStyleAttr);
-            if (titleColor != 0){
+            if (L_TextColor != 0){
                 setTitleColor(L_TextColor);
             }
 
